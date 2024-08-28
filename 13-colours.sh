@@ -5,10 +5,10 @@ G="\e[32m"
 N="\e[0m"
 CHECK_ROOT(){
     if [ $USERID -ne 0 ];then
-    echo " $R you dont have root previlages $N "
+    echo "  you dont have root previlages "
     exit 1
     else 
-    echo " $G you have root previlages to run this command $N "
+    echo "  you have root previlages to run this command  "
     fi
 }
 VALIDATE(){
