@@ -14,7 +14,7 @@ N="\e[0m"
 
 CHECK_ROOT(){
     if [ $USERID -ne 0 ];then
-    echo " you don't have root previlages to run this command " >>&LOG_FILE
+    echo " you don't have root previlages to run this command " &>>LOG_FILE
     exit 1
     else 
     echo " you have root previlages "
