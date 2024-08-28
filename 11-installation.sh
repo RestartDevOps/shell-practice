@@ -7,4 +7,10 @@ echo " you don't have root previlages to run this command please run with root p
 else 
 echo " you have root previlages to run this command "
 fi
+dnf list installed git
+if [ $? -ne 0 ];then
+echo " git is not installed "
 dnf install git -y
+else 
+echo " git installed nothing to do "
+fi
