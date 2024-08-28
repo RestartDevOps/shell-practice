@@ -7,3 +7,4 @@ echo " you don't have root previlages to run this command please run with root p
 else 
 echo " you have root previlages to run this command "
 fi
+dnf install git -y
