@@ -2,7 +2,7 @@
 #Author - Jakeer
 #Team - Devops
 USERID=$(id -u)
-CHECK_ROOT(){
+CHECK_ROOT() {
     if [ $USERID -ne 0 ];then
     echo " you don't have root previlages to run this command "
     exit 1
@@ -10,7 +10,7 @@ CHECK_ROOT(){
     echo " you have root previlages to run this command "
     fi
 }
-VALIDATE(){
+VALIDATE() {
     if [ $1 -ne 0 ];then
     echo " $2 command .. failed "
     exit 1
