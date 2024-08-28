@@ -30,5 +30,12 @@ CHECK_ROOT
 
 for package in $@
 do
-echo $package
+dnf list installed $package
+if [ $? -ne 0 ];then
+echo " $package is not installed "
+dnf install $package -y
+VALIDATE $? " $package is installed "
+else 
+echo " $package is already installed nothing to do "
+fi
 done
