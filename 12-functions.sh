@@ -1,6 +1,6 @@
 #!/bin/bash
-Author - Jakeer
-Team - DevOps
+#Author - Jakeer
+#Team - DevOps
 
 USERID=$(id -u)
 
