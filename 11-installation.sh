@@ -13,7 +13,7 @@ if [ $? -ne 0 ];then
 echo " git is not installed "
 dnf install git -y
 if [ $? -ne 0 ];then
-echo " git installation fialed
+echo " git installation fialed "
 else 
 echo " git installation success "
 fi
