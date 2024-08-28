@@ -8,10 +8,10 @@ exit 1
 else 
 echo " you have root previlages to run this command "
 fi
-dnf list installed gittt
+dnf list installed git
 if [ $? -ne 0 ];then
 echo " git is not installed "
-dnf install gittt -y
+dnf install git -y
 if [ $? -ne 0 ];then
 echo " git installation fialed "
 else 
