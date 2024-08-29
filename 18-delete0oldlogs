@@ -13,5 +13,10 @@ else
 echo -e " $SOURCE_DIR $G is not available $N "
 exit 1
 fi
-files=$(find $SOURCE_DIR "*.log" -mtime +14 )
+fFILES=$(find $SOURCE_DIR "*.log" -mtime +14 )
 echo "files: $files"
+while IFS=read -r lines #internal field seperator 
+do
+echo " deleting lines: $lines "
+#rm -rf $lines
+done <<<$FILES
